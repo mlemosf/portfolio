@@ -1,0 +1,42 @@
+.testimonials {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.testimonial {
+  background: $surface;
+  border: 1px solid $border;
+  border-radius: $radius;
+  box-shadow: $shadow;
+  margin: 0;
+  padding: 1.5rem;
+}
+
+.testimonial__avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.testimonial blockquote {
+  color: $primary-soft;
+  font-size: 1.05rem;
+  margin: 0 0 1.25rem;
+}
+
+.testimonial figcaption {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.testimonial .author {
+  font-weight: 900;
+}
+
+.testimonial .role {
+  color: $muted;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,12 @@
+{{ $name := .Site.Params.name | default .Site.Title }}
+{{ $role := .Site.Params.role | default "Data Engineer" }}
+{{ $profileImage := .Site.Params.profile_image | default "img/portrait.svg" }}
+<header class="site-header">
+  <div class="site-header__content">
+    <img src="{{ $profileImage | relURL }}" alt="Portrait of {{ $name }}" class="profile-pic" />
+    <p class="eyebrow">Data Engineering Portfolio</p>
+    <h1>{{ $name }}</h1>
+    <p class="site-role">{{ $role }}</p>
+    {{ with .Site.Params.description }}<p class="site-description">{{ . }}</p>{{ end }}
+  </div>
+</header>

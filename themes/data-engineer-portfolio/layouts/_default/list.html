@@ -1,0 +1,18 @@
+{{ define "list" }}
+  {{ partial "header.html" . }}
+  <main class="site-main">
+    <section class="section">
+      <div class="section__inner">
+        <h2>{{ .Title }}</h2>
+        <ul>
+          {{ range .Pages }}
+            <li>
+              <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    </section>
+  </main>
+  {{ partial "footer.html" . }}
+{{ end }}

@@ -1,0 +1,32 @@
+{{/* Professional Experience Timeline */}}
+{{ $jobs := sort (where .Site.RegularPages "Section" "experience") "Params.start" "desc" }}
+<section class="section experience" id="experience">
+  <div class="section__inner">
+    <p class="section__kicker">Career</p>
+    <h2>Professional Experience</h2>
+    {{ if $jobs }}
+      <div class="timeline">
+        {{ range $jobs }}
+          {{ $start := .Params.start_label | default .Params.start }}
+          {{ $end := .Params.end_label | default .Params.end | default "Present" }}
+          <article class="timeline-item">
+            <div class="marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <p class="timeline-date">{{ $start }} – {{ $end }}</p>
+              <h3>{{ .Title }}{{ with .Params.company }} <span>at {{ . }}</span>{{ end }}</h3>
+              {{ with .Params.location }}<p class="timeline-location">{{ . }}</p>{{ end }}
+              {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+              {{ with .Params.tech }}
+                <ul class="tech-stack" aria-label="Technologies used">
+                  {{ range . }}<li>{{ . }}</li>{{ end }}
+                </ul>
+              {{ end }}
+            </div>
+          </article>
+        {{ end }}
+      </div>
+    {{ else }}
+      <p>No professional experience entries have been added yet.</p>
+    {{ end }}
+  </div>
+</section>

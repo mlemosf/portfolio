@@ -1,0 +1,50 @@
+.site-header {
+  background: radial-gradient(circle at top left, rgba(20, 184, 166, 0.35), transparent 35%), linear-gradient(135deg, $primary, $primary-soft);
+  color: #fff;
+  padding: 5rem 1rem 4rem;
+  text-align: center;
+}
+
+.site-header__content {
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+.profile-pic {
+  width: 168px;
+  height: 168px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 5px solid rgba(255, 255, 255, 0.92);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  margin: 0 auto 1.5rem;
+  background: $accent-soft;
+}
+
+.eyebrow {
+  color: $accent-soft;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+.site-header h1 {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  margin-bottom: 0.5rem;
+}
+
+.site-role {
+  color: $accent-soft;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.site-description {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1.05rem;
+  margin: 0 auto;
+  max-width: 620px;
+}

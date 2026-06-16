@@ -1,0 +1,83 @@
+.timeline {
+  position: relative;
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0.55rem;
+  top: 0.75rem;
+  width: 2px;
+  background: linear-gradient($accent, rgba(20, 184, 166, 0.08));
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 1.4rem 1fr;
+  gap: 1rem;
+  position: relative;
+}
+
+.marker {
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 999px;
+  background: $accent;
+  border: 3px solid $bg;
+  box-shadow: 0 0 0 4px $accent-soft;
+  margin-top: 1.25rem;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-card {
+  background: $surface;
+  border: 1px solid $border;
+  border-radius: $radius;
+  box-shadow: $shadow;
+  padding: 1.5rem;
+}
+
+.timeline-date {
+  color: $accent;
+  font-size: 0.9rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-card h3 span {
+  color: $muted;
+  font-weight: 600;
+}
+
+.timeline-location {
+  color: $muted;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.tech-stack li {
+  background: $accent-soft;
+  border-radius: 999px;
+  color: #115e59;
+  font-size: 0.85rem;
+  font-weight: 800;
+  padding: 0.35rem 0.75rem;
+}

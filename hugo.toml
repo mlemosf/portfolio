@@ -1,0 +1,16 @@
+baseURL = 'https://matheuslemos.com/'
+language = "en"
+title = 'Matheus Lemos - Engenheiro de Dados'
+theme = 'data-engineer-portfolio'
+
+[params]
+  name = 'Matheus Lemos'
+  role = 'Engenheiro de Dados'
+  description = 'Portfólio profissional de engenharia de dados, pipelines, analytics e plataformas de dados.'
+  email = 'matheus@example.com'
+  profile_image = 'img/portrait.svg'
+
+[params.social]
+  linkedin = 'https://linkedin.com/in/matheus'
+  github = 'https://github.com/matheus'
+  twitter = 'https://twitter.com/matheus'

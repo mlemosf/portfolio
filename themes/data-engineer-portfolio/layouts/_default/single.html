@@ -1,0 +1,12 @@
+{{ define "single" }}
+  {{ partial "header.html" . }}
+  <main class="site-main">
+    <article class="section">
+      <div class="section__inner">
+        <h1>{{ .Title }}</h1>
+        {{ .Content }}
+      </div>
+    </article>
+  </main>
+  {{ partial "footer.html" . }}
+{{ end }}

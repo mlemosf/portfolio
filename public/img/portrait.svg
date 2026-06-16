@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">Portrait placeholder</title>
+  <desc id="desc">A circular abstract avatar for the data engineer portfolio.</desc>
+  <rect width="240" height="240" fill="#ccfbf1"/>
+  <circle cx="120" cy="92" r="46" fill="#0f172a"/>
+  <path d="M44 224c8-48 38-78 76-78s68 30 76 78" fill="#0f172a"/>
+  <path d="M68 58c22-28 65-35 96-13 25 18 34 49 24 76" fill="none" stroke="#14b8a6" stroke-width="14" stroke-linecap="round"/>
+</svg>

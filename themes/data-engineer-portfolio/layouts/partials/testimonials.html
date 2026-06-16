@@ -1,0 +1,24 @@
+{{/* Testimonials Section */}}
+{{ $testimonials := .Site.Data.testimonials }}
+<section class="section testimonials-section" id="testimonials">
+  <div class="section__inner">
+    <p class="section__kicker">Testimonials</p>
+    <h2>What people say</h2>
+    {{ if $testimonials }}
+      <div class="testimonials">
+        {{ range $testimonial := $testimonials }}
+          <figure class="testimonial">
+            {{ with $testimonial.avatar }}<img class="testimonial__avatar" src="{{ . | relURL }}" alt="{{ $testimonial.author }}" />{{ end }}
+            <blockquote>“{{ $testimonial.quote }}”</blockquote>
+            <figcaption>
+              <span class="author">{{ $testimonial.author }}</span>
+              {{ with $testimonial.role }}<span class="role">{{ . }}</span>{{ end }}
+            </figcaption>
+          </figure>
+        {{ end }}
+      </div>
+    {{ else }}
+      <p>No testimonials have been added yet.</p>
+    {{ end }}
+  </div>
+</section>

@@ -1,0 +1,28 @@
+.site-main {
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.section__inner {
+  width: 100%;
+}
+
+.section__kicker {
+  color: $accent;
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.section h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 2rem;
+}

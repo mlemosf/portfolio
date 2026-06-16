@@ -1,0 +1,10 @@
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p class="footer-contact">Contact: <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
+    <ul class="social-links" aria-label="Social networks">
+      {{ with .Site.Params.social.linkedin }}<li><a href="{{ . }}" target="_blank" rel="noopener noreferrer"><img src="{{ "icons/linkedin.svg" | relURL }}" alt="LinkedIn" /></a></li>{{ end }}
+      {{ with .Site.Params.social.github }}<li><a href="{{ . }}" target="_blank" rel="noopener noreferrer"><img src="{{ "icons/github.svg" | relURL }}" alt="GitHub" /></a></li>{{ end }}
+      {{ with .Site.Params.social.twitter }}<li><a href="{{ . }}" target="_blank" rel="noopener noreferrer"><img src="{{ "icons/twitter.svg" | relURL }}" alt="Twitter" /></a></li>{{ end }}
+    </ul>
+  </div>
+</footer>
