@@ -1,0 +1,34 @@
+# Docker Compose for Hugo devcontainer
+# - Service `workspace` mounts the repository at /workspace
+# - Exposes Hugo's live server on port 1313
+# - Uses klakegg/hugo:ext-alpine (Hugo extended) so Hugo is available inside the container
+#
+# Usage:
+#  - Start locally:  `docker compose up --build` or `docker compose up --detach`
+#  - Open with VS Code Dev Containers: open folder in container and select this compose service
+
+version: '3.8'
+
+services:
+  workspace:
+    image: klakegg/hugo:ext-alpine
+    container_name: hugo-portfolio-dev
+    working_dir: /workspace
+    # Start the Hugo live server and bind to all interfaces so the host/devcontainer can connect
+#    command: hugo server --bind 0.0.0.0 --baseURL http://0.0.0.0:1313 --port 1313 --watch --disableFastRender
+    command: server --bind 0.0.0.0
+    volumes:
+      - ./:/workspace:delegated
+    ports:
+      - "1313:1313"
+    environment:
+      HUGO_ENV: development
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+
+# Notes:
+# - If you prefer the devcontainer to start with a sleeping process and run the server manually inside the container,
+#   change `command` to `sleep infinity` (or remove it) and start Hugo inside the container/VS Code terminal.
+# - On some hosts you may want to set UID/GID mapping to avoid permission issues. You can add `user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"`
+#   and set LOCAL_UID/LOCAL_GID in an .env file or your shell environment before running docker compose.

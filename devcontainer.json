@@ -1,0 +1,13 @@
+{
+  "name": "Hugo Portfolio (Compose)",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "workspace",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/sh"
+  },
+  "extensions": [
+    "ms-azuretools.vscode-docker"
+  ]
+}
