@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Experiences on Matheus Lemos - Engenheiro de Dados</title>
-		<link>https://matheuslemos.com/experience/</link>
+		<link>http://localhost:1313/experience/</link>
 		<description>Recent content in Experiences on Matheus Lemos - Engenheiro de Dados</description>
 		<generator>Hugo</generator>
 		<language>en</language>
@@ -10,19 +10,19 @@
 		
 		
 		
-			<atom:link href="https://matheuslemos.com/experience/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/experience/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Midlevel Data Engineer</title>
-				<link>https://matheuslemos.com/experience/job-2/</link>
+				<link>http://localhost:1313/experience/job2/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://matheuslemos.com/experience/job-2/</guid>
+				<guid>http://localhost:1313/experience/job2/</guid>
 				<description>Designed and maintained private cloud Spark and Jupyterhub deployments.</description>
 			</item>
 			<item>
 				<title>Senior Data Engineer</title>
-				<link>https://matheuslemos.com/experience/job-1/</link>
+				<link>http://localhost:1313/experience/job1/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>https://matheuslemos.com/experience/job-1/</guid>
+				<guid>http://localhost:1313/experience/job1/</guid>
 				<description>Designed and maintained data pipelines processing over 10 TB per day using Spark and Airflow.</description>
 			</item>
 	</channel>
