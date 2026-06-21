@@ -1,6 +1,6 @@
 {
   "name": "Hugo Portfolio (Compose)",
-  "dockerComposeFile": ["../docker-compose.yml"],
+  "dockerComposeFile": ["./docker-compose.yml"],
   "service": "workspace",
   "workspaceFolder": "/workspace",
   "shutdownAction": "stopCompose",
