@@ -5,12 +5,11 @@ theme = 'data-engineer-portfolio'
 
 [params]
   name = 'Matheus Lemos'
-  role = 'Engenheiro de Dados'
-  description = 'Portfólio profissional de engenharia de dados, pipelines, analytics e plataformas de dados.'
-  email = 'matheus@example.com'
-  profile_image = 'img/portrait.svg'
+  role = 'Data Engineer'
+  description = 'Senior Data Engineer with experience in Databricks, Spark and Delta Lake, ready to tackle your data problems'
+  email = 'matheuslemosf@gmail.com'
+  profile_image = 'img/profile.png'
 
 [params.social]
-  linkedin = 'https://linkedin.com/in/matheus'
-  github = 'https://github.com/matheus'
-  twitter = 'https://twitter.com/matheus'
+  github = 'https://github.com/mlemosf'
+  twitter = '#'

@@ -71,6 +71,11 @@
   letter-spacing: 0.05em;
 }
 
+.feature-card__status--certified {
+  background: #dcfce7;
+  color: #166534;
+}
+
 .feature-card__status--completed {
   background: #dcfce7;
   color: #166534;
@@ -180,16 +185,16 @@
     grid-template-columns: 1fr;
     gap: 1.25rem;
   }
-  
+
   .feature-card {
     padding: 1.5rem;
   }
-  
+
   .feature-card__icon {
     width: 3rem;
     height: 3rem;
   }
-  
+
   .feature-card__icon svg {
     width: 1.5rem;
     height: 1.5rem;

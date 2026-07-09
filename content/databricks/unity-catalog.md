@@ -1,7 +1,7 @@
 ---
 title: "Unity Catalog Implementation"
 category: "Data Governance"
-status: "Completed"
+status: "Certified"
 summary: |
   Implemented Unity Catalog as the centralized governance solution for Databricks workspaces, enabling unified data access control, cross-workspace data sharing, and comprehensive audit logging.
 icon: "database"

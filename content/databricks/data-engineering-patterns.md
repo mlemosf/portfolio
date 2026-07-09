@@ -1,7 +1,7 @@
 ---
 title: "Data Engineering Patterns"
 category: "Data Engineering"
-status: "In Progress"
+status: "Certified"
 summary: |
   Architected and implemented modern data engineering solutions using Databricks' advanced features including Auto Loader for incremental ingestion, Delta Lake for reliable storage, and SQL Warehouses for analytics.
 icon: "code"

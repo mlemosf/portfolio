@@ -1,7 +1,7 @@
 ---
 title: "Infrastructure Deployment"
 category: "Platform Engineering"
-status: "Completed"
+status: "Certified"
 summary: |
   Designed and implemented complete Databricks workspace infrastructure on AWS, including service principal configuration, AWS IAM integration, and Hive Metastore setup with S3 backend storage.
 icon: "cloud"
