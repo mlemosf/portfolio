@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Matheus Lemos - Engenheiro de Dados</title>
-		<link>http://localhost:1313/</link>
+		<link>https://matheuslemos.com/</link>
 		<description>Recent content on Matheus Lemos - Engenheiro de Dados</description>
 		<generator>Hugo</generator>
 		<language>en</language>
@@ -10,41 +10,62 @@
 		
 		
 		
-			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://matheuslemos.com/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Data Engineering Patterns</title>
+				<link>https://matheuslemos.com/databricks/data-engineering-patterns/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://matheuslemos.com/databricks/data-engineering-patterns/</guid>
+				<description>Architected and implemented modern data engineering solutions using Databricks&amp;rsquo; advanced features including Auto Loader for incremental ingestion, Delta Lake for reliable storage, and SQL Warehouses for analytics.</description>
+			</item>
+			<item>
+				<title>Infrastructure Deployment</title>
+				<link>https://matheuslemos.com/databricks/infrastructure-deployment/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://matheuslemos.com/databricks/infrastructure-deployment/</guid>
+				<description>Designed and implemented complete Databricks workspace infrastructure on AWS, including service principal configuration, AWS IAM integration, and Hive Metastore setup with S3 backend storage.</description>
+			</item>
 			<item>
 				<title>Midlevel Data Engineer</title>
-				<link>http://localhost:1313/experience/job2/</link>
+				<link>https://matheuslemos.com/experience/job2/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/experience/job2/</guid>
+				<guid>https://matheuslemos.com/experience/job2/</guid>
 				<description>&lt;p&gt;Designed, deployed and maintained private-cloud data infrastructure to support analytics and ML teams:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Built multi-user JupyterHub environments for data scientists, enabling secure, isolated workspaces and self-service notebooks.&lt;/li&gt;&#xA;&lt;li&gt;Provisioned and operated on-premises Apache Spark clusters for large-scale data processing and ETL workflows.&lt;/li&gt;&#xA;&lt;li&gt;Deployed S3-compatible object storage using MinIO and integrated it with compute clusters for reliable, scalable data lakes.&lt;/li&gt;&#xA;&lt;li&gt;Implemented Delta Lake to provide ACID transactions and reliable data pipelines.&lt;/li&gt;&#xA;&lt;li&gt;Automated deployments and operational tasks with Docker-based containerization and infrastructure-as-code patterns; supported monitoring, backups, and access control for production systems.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
 			</item>
 			<item>
 				<title>Midlevel Data Engineer</title>
-				<link>http://localhost:1313/experience/job3/</link>
+				<link>https://matheuslemos.com/experience/job3/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/experience/job3/</guid>
+				<guid>https://matheuslemos.com/experience/job3/</guid>
 				<description>Designed and maintained private cloud Spark and Jupyterhub deployments.</description>
 			</item>
 			<item>
 				<title>Midlevel Data Engineer</title>
-				<link>http://localhost:1313/experience_bkp/job-2/</link>
+				<link>https://matheuslemos.com/experience_bkp/job-2/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/experience_bkp/job-2/</guid>
+				<guid>https://matheuslemos.com/experience_bkp/job-2/</guid>
 				<description>Designed and maintained private cloud Spark and Jupyterhub deployments.</description>
 			</item>
 			<item>
 				<title>Senior Data Engineer</title>
-				<link>http://localhost:1313/experience/job1/</link>
+				<link>https://matheuslemos.com/experience/job1/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/experience/job1/</guid>
+				<guid>https://matheuslemos.com/experience/job1/</guid>
 				<description>Designed and maintained data pipelines for a variety of origins, including databases, files and third party APIs, using the Databricks platform.</description>
 			</item>
 			<item>
 				<title>Senior Data Engineer</title>
-				<link>http://localhost:1313/experience_bkp/job-1/</link>
+				<link>https://matheuslemos.com/experience_bkp/job-1/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-				<guid>http://localhost:1313/experience_bkp/job-1/</guid>
+				<guid>https://matheuslemos.com/experience_bkp/job-1/</guid>
 				<description>Designed and maintained data pipelines processing over 10 TB per day using Spark and Airflow.</description>
+			</item>
+			<item>
+				<title>Unity Catalog Implementation</title>
+				<link>https://matheuslemos.com/databricks/unity-catalog/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>https://matheuslemos.com/databricks/unity-catalog/</guid>
+				<description>Implemented Unity Catalog as the centralized governance solution for Databricks workspaces, enabling unified data access control, cross-workspace data sharing, and comprehensive audit logging.</description>
 			</item>
 	</channel>
 </rss>

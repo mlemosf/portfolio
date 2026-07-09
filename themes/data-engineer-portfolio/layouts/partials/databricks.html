@@ -1,0 +1,54 @@
+{{/* Databricks Experience Section */}}
+{{ $databricksPages := where .Site.RegularPages "Section" "databricks" }}
+{{ $sectionInfo := .Site.GetPage "section" "databricks" }}
+<section class="section databricks" id="databricks">
+  <div class="section__inner">
+    <p class="section__kicker">Platform Expertise</p>
+    <h2>{{ with $sectionInfo }}{{ .Title }}{{ else }}Databricks Experience{{ end }}</h2>
+    {{ with $sectionInfo }}{{ with .Params.description }}<p class="section__intro">{{ . }}</p>{{ end }}{{ end }}
+    
+    {{ if $databricksPages }}
+      <div class="feature-grid">
+        {{ range $databricksPages }}
+          <article class="feature-card">
+            <div class="feature-card__header">
+              <div class="feature-card__icon">
+                {{ partial "icon.html" (.Params.icon | default "server") }}
+              </div>
+              {{ with .Params.status }}
+                <span class="feature-card__status feature-card__status--{{ . | lower | replaceRE "\\s+" "-" }}">{{ . }}</span>
+              {{ end }}
+            </div>
+            
+            <div class="feature-card__content">
+              {{ with .Params.category }}<p class="feature-card__category">{{ . }}</p>{{ end }}
+              <h3 class="feature-card__title">{{ .Title }}</h3>
+              {{ with .Params.summary }}<p class="feature-card__summary">{{ . }}</p>{{ end }}
+            </div>
+            
+            <div class="feature-card__tags">
+              {{ with .Params.aws_services }}
+                <div class="tag-group">
+                  <span class="tag-group__label">AWS</span>
+                  <ul class="tag-list">
+                    {{ range . }}<li class="tag tag--aws">{{ . }}</li>{{ end }}
+                  </ul>
+                </div>
+              {{ end }}
+              {{ with .Params.databricks_features }}
+                <div class="tag-group">
+                  <span class="tag-group__label">Databricks</span>
+                  <ul class="tag-list">
+                    {{ range . }}<li class="tag tag--databricks">{{ . }}</li>{{ end }}
+                  </ul>
+                </div>
+              {{ end }}
+            </div>
+          </article>
+        {{ end }}
+      </div>
+    {{ else }}
+      <p class="empty-state">No Databricks experience entries have been added yet.</p>
+    {{ end }}
+  </div>
+</section>

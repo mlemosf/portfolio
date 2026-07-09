@@ -1,6 +1,6 @@
 ---
 title: "Senior Data Engineer"
-company: Sicoob
+company: Confidential Company 
 start: 2026-03-09
 start_label: "Mar 2026"
 summary: |
